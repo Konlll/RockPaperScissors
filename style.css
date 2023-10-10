@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 54);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto 0 auto;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 120px;
+    background-color: #fff;
+    color: rgb(1, 1, 104);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.score h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.score span{
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+}
+.game{
+    max-width: 400px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.game .row:last-child{
+    justify-content: center;
+    margin-top: 60px;
+}
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(77, 77, 77);
+    font-size: 50px;
+    border-width: 15px;
+    border-style: solid;
+}
+.clickable{
+    cursor: pointer;
+}
+.paper{
+    border-color: blue;
+    box-shadow: 0 10px 0 rgb(1, 1, 104);
+}
+.scissors{
+    border-color: orange;
+    box-shadow: 0 10px 0 rgba(255, 166, 0, 0.507);
+}
+.rock{
+    border-color: red;
+    box-shadow: 0 10px 0 rgba(255, 0, 0, 0.507);
+}
+
+.winner{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 90px;
+    display: none;
+}
+
+button{
+    width: 300px;
+    padding: 35px;
+    background-color: transparent;
+    outline: none;
+    font-size: 35px;
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 80px;
+
+    &:hover{
+        color: #000;
+        background-color: #fff;
+    }
+}

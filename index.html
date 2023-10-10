@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <h1>Rock<br>Paper<br>Scissors</h1>
+        <div class="score">
+            <h2>Score</h2>
+            <span id="score">0</span>
+        </div>
+    </div>
+    <div class="game">
+        <div class="row first-row">
+            <div class="item clickable paper" id="paper">
+                <span id="paper">&#128221;</span>
+            </div>
+            <div class="item clickable scissors" id="scissors">
+                <span id="scissors">&#9986;</span>
+            </div>
+        </div>
+        <div class="row last-row">
+            <div class="item clickable rock" id="rock">
+                <span id="rock">&#128511;</span>
+            </div>
+        </div>
+    </div>
+    <div class="winner">
+        <button>Restart</button>
+    </div>
+</body>
+
+</html>
